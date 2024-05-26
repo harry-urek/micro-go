@@ -3,10 +3,9 @@ package main
 import "net/http"
 import "log"
 
-
 type handler struct {
 	// gateway
-    
+
 }
 
 func NewHandler() *handler {
@@ -18,6 +17,6 @@ func (h *handler) registerRoutes(mux *http.ServeMux) {
 }
 
 func (h *handler) HandleCreateOrder(w http.ResponseWriter, r *http.Request) {
-    log.Println("Hello Order is geting placed")
+	log.Println("Hello Order is geting placed")
 
 }
